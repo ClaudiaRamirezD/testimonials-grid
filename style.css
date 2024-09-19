@@ -125,9 +125,13 @@ img {
     grid-area: two;
 }
 
-.three, .five {
+.three {
     background-color: var(--clr-white);
     grid-area: three;
+    
+}
+
+.three .card-name, .five .card-name, .three .card-resume, .five .card-name, .five .card-resume{
     color: var(--clr-dark-blackish-blue);
 }
 
