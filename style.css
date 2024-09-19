@@ -32,12 +32,15 @@ body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
 /* Core Body Styles */
 body {
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     font-family: var(--ff-sans);
     font-weight: var(--fw-regular);
     font-size: var(--fs-300);
     line-height: 1.5;
     background-color: var(--clr-light-grayish-blue);
     color: var(--clr-light-grayish-blue);
+    margin: 0;
 }
 
 /* Text Wrapping */
@@ -48,6 +51,7 @@ h1, h2, h3, h4 {
 
 /* Wrapper Class */
 .wrapper {
+    flex: 1; /* Makes the main content expand to take the available space */
     padding-inline: 2rem;
     width: min(90%, 70rem);
     margin-inline: auto;
@@ -164,11 +168,13 @@ h4 {
 }
 
 /* Attribution */
-.attribution {
-    color: black;
+footer {
     margin-top: 2rem;
     font-size: 11px;
     text-align: center;
+    background-color: var(--clr-light-grayish-blue);
+    color: var(--clr-very-dark-grayish-blue);
+    padding: 1rem;
 }
 
 .attribution a {
